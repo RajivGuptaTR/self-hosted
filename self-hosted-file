@@ -1,14 +1,16 @@
- // Create a folder
+# Create a folder
 $ mkdir actions-runner && cd actions-runner
-// Download the latest runner package
-$ curl -O -L https://github.com/actions/runner/releases/download/v2.273.5/actions-runner-linux-x64-2.273.5.tar.gz
 
-// Extract the installer
-$ tar xzf ./actions-runner-linux-x64-2.273.5.tar.gz
+# Download the latest runner package
+$ curl -o actions-runner-linux-x64-2.319.1.tar.gz -L https://github.com/actions/runner/releases/download/v2.319.1/actions-runner-linux-x64-2.319.1.tar.gz
 
-// Create the runner and start the configuration experience
-$ ./config.sh --url https://github.com/tr --runnergroup a208548-taxcaddy-admins-runnergroup --labels L1,L2,L3 --token $TOKEN
+# Optional: Validate the hash
+$ echo "3f6efb7488a183e291fc2c62876e14c9ee732864173734facc85a1bfb1744464  actions-runner-linux-x64-2.319.1.tar.gz" | shasum -a 256 -c
 
+# Extract the installer
+$ tar xzf ./actions-runner-linux-x64-2.319.1.tar.gz
+
+./config.sh --url https://github.com/tr/a208548_api_BulkService --token BJUZAW74YEHM7CJOQ5ZZFWDGX4VDY
 
 APZSHZU7KYO4KPVGFTAXMPTGX4SXZAVPNFXHG5DBNRWGC5DJN5XF62LEZYAI7AZOWFUW443UMFWGYYLUNFXW4X3UPFYGLN2JNZ2GKZ3SMF2GS33OJFXHG5DBNRWGC5DJN5XA
 
