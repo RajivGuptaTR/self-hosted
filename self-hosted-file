@@ -1,0 +1,16 @@
+ // Create a folder
+$ mkdir actions-runner && cd actions-runner
+// Download the latest runner package
+$ curl -O -L https://github.com/actions/runner/releases/download/v2.273.5/actions-runner-linux-x64-2.273.5.tar.gz
+
+// Extract the installer
+$ tar xzf ./actions-runner-linux-x64-2.273.5.tar.gz
+
+// Create the runner and start the configuration experience
+$ ./config.sh --url https://github.com/tr --runnergroup a208548-taxcaddy-admins-runnergroup --labels L1,L2,L3 --token $TOKEN
+
+
+APZSHZU7KYO4KPVGFTAXMPTGX4SXZAVPNFXHG5DBNRWGC5DJN5XF62LEZYAI7AZOWFUW443UMFWGYYLUNFXW4X3UPFYGLN2JNZ2GKZ3SMF2GS33OJFXHG5DBNRWGC5DJN5XA
+
+// Last step, run it!
+$ ./run.sh
