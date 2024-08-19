@@ -16,3 +16,6 @@ APZSHZU7KYO4KPVGFTAXMPTGX4SXZAVPNFXHG5DBNRWGC5DJN5XF62LEZYAI7AZOWFUW443UMFWGYYLU
 
 // Last step, run it!
 $ ./run.sh
+
+
+curl -X POST http://bluemoon-dashboard.int.thomsonreuters.com/jenkins --user C297063:1155db93c52bada322892953f10d189231
